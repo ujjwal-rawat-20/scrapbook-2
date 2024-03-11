@@ -853,7 +853,7 @@ body {
     }
 
     .fifth-container .container {
-        padding-bottom: 60%;
+        padding-bottom: 79%;
     }
 
     .fifth-container .container .container-one {
@@ -913,6 +913,10 @@ body {
 
     .third-container .container .card:nth-child(2) {
         margin: 0 0;
+    }
+
+    .fouth-container {
+        height: 80%;
     }
 
     .fouth-container .container {
@@ -1022,6 +1026,10 @@ body {
         height: auto;
     }
 
+    .eighth-container{
+        padding-top: 30%;
+    }
+
     .eighth-container .container .inner-container .heading {
         text-align: center;
         width: 100%;
@@ -1045,6 +1053,7 @@ body {
 
     .ninth-container {
         height: auto;
+        padding-top: 40%;
     }
 
     .ninth-container .container {
@@ -1084,6 +1093,14 @@ body {
     .ninth-container .container .inner-container .block-one .block-one-first {
         font-size: 51px;
         line-height: 78px;
+    }
+
+    .tenth-container {
+        padding: 5% 0;
+    }
+
+    .tenth-container .container {
+        padding: 0;
     }
 
     .tenth-container .container .inner-container .block-two table td {
