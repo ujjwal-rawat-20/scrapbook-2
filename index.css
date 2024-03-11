@@ -24,6 +24,9 @@ body {
     top: 30%;
 }
 
+.mobile-menu-modal {
+    display: none;
+}
 
 #sec-one {
     width: 100%;
@@ -50,6 +53,10 @@ body {
     position: relative;
     display: flex;
     justify-content: space-between;
+}
+
+.burger-menu  {
+    display: none;
 }
 
 .links {
@@ -106,6 +113,10 @@ body {
     height: 69%;
 }
 
+.main-img-1 {
+    display: none;
+}
+
 .main-img img {
     width: 100%;
     height: 100%;
@@ -144,6 +155,12 @@ body {
     text-align: center;
     padding: 9px 0;
     background-color: black;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background-color: #c4c4c4;
+    color: #232323;
 }
 
 .second-container {
@@ -349,7 +366,6 @@ body {
     width: 100%;
     height: 100%;
     padding: 0 10%;
-    border: 1px solid white;
     padding-top: 4%;
     padding-bottom: 5%;
     display: flex;
@@ -819,13 +835,81 @@ body {
 
 
 @media screen and (max-width: 600px) {
-    .navbar {
+    .mobile-menu{
+        position: absolute;
+        left: 0;
+        background: #1f1e1e;
+        color: white;
+        width: 50%;
+        height: 100vh;
+        z-index: 1;
         display: none;
+        transition: transform 1s ease-out;
+    }
+
+    .mobile-menu-modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* pointer-events: none; */
+    }
+
+    .mobile-menu p {
+        padding-top: 35px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    /* .mobile-menu p:hover {
+        background-color: #c4c4c4;
+        color: #232323;
+    } */
+
+    .outter-container {
+        height: auto;
+    }
+
+    #sec-one {
+        height: auto;
+    }
+
+    .navbar {
+        /* display: none; */
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .navbar .links, .contact-link {
+        display: none;
+    }
+
+    .burger-menu img {
+        width: 25px;
+        height: 25px;
     }
 
     .text-and-img-container {
         flex-direction: column;
         padding: 10% 0;
+    }
+
+    .main-img-1 {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-img-1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-img {
+        display: none;
     }
 
     .main-text, .main-img {
@@ -852,9 +936,9 @@ body {
         margin-left: 0;
     }
 
-    .fifth-container .container {
-        padding-bottom: 79%;
-    }
+    /* .fifth-container .container {
+      
+    } */
 
     .fifth-container .container .container-one {
         padding: 5% 0;
@@ -916,7 +1000,7 @@ body {
     }
 
     .fouth-container {
-        height: 80%;
+        height: auto;
     }
 
     .fouth-container .container {
@@ -938,6 +1022,10 @@ body {
         text-align: center;
         padding: 22px 0;
         font-size: 10px;
+    }
+
+    .fifth-container {
+        height: auto;
     }
 
     .fifth-container .container {
@@ -966,6 +1054,10 @@ body {
         width: 100%;
     }
 
+    .sixth-container {
+        height: auto;
+    }
+
     .sixth-container-one , .sixth-container-two{
         width: 100%;
     }
@@ -989,7 +1081,21 @@ body {
     }
 
     .sixth-container-two {
+        position: static;
         padding: 18px 0;
+    }
+
+    .sixth-container .container {
+        width: 100%;
+        height: auto;
+        padding-left: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 5%;
+    }
+
+    .seventh-container {
+        height: auto;
     }
 
     .seventh-container .container .inner-container .seventh-container-one {
@@ -1006,6 +1112,8 @@ body {
 
     .seventh-container .container .inner-container .seventh-container-two {
         position: static;
+        height: auto;
+        padding: 20px 0;
     }
 
     .seventh-container .container .inner-container .seventh-container-one .paragraph {
@@ -1027,7 +1135,7 @@ body {
     }
 
     .eighth-container{
-        padding-top: 30%;
+        height: auto;
     }
 
     .eighth-container .container .inner-container .heading {
@@ -1053,16 +1161,15 @@ body {
 
     .ninth-container {
         height: auto;
-        padding-top: 40%;
     }
 
-    .ninth-container .container {
-        padding: 30% 10%;
+    /* .ninth-container .container {
+        
     }
 
     .ninth-container .container .inner-container{
-        padding-top: 28%;
-    }
+        
+    } */
 
 
     ninth-container .container .inner-container .block-one .block-one-sixth button {
