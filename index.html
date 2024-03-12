@@ -179,7 +179,7 @@
                 </div>
             </div>
             <div class="block-three">
-                <img src="./right-arrow.png" />
+                <img src="./right-arrw.png" />
             </div>
         </div>
     </div>
@@ -197,7 +197,7 @@
                         Lorem, ipsum dolor
                     </div>
                     <div class="para-content">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        Lorem ipsum, dolor sit amet consectetur
                         Ipsam non praesentium omnis quia porro quisquam!
                         Ipsam non praesentium omnis quia porro quisquam!
                         Ipsam non praesentium omnis quia porro quisquam!
@@ -210,7 +210,7 @@
                         Lorem, ipsum dolor
                     </div>
                     <div class="para-content">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        Lorem ipsum, dolor sit amet consectetur
                         Ipsam non praesentium omnis quia porro quisquam!
                         Ipsam non praesentium omnis quia porro quisquam!
                         Ipsam non praesentium omnis quia porro quisquam!
@@ -269,6 +269,24 @@
                     <h1>Here's what they have to say...</h1>
                 </div>
                 <div class="cards">
+                    <div class="left-arrow">
+                        <img src="./l-arrow.png" />
+                    </div>
+                    <div class="right-arrow">
+                        <img src="./l-arrow.png" />
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./ellipse.png" />
+                        </div>
+                        <div class="card-heading">
+                            Customer Name
+                        </div>
+                        <div class="card-para">
+                            Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Vel, laborum Lorem ipsum dolor sit.
+                        </div>
+                    </div>
                     <div class="card">
                         <div class="card-img">
                             <img src="./ellipse.png" />
@@ -293,16 +311,13 @@
                             adipisicing elit. Vel, laborum Lorem ipsum dolor sit.
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img src="./ellipse.png" />
+
+                    <div class="arrows">
+                        <div class="arrow">
+                            <img src="./l-arrow.png"/>
                         </div>
-                        <div class="card-heading">
-                            Customer Name
-                        </div>
-                        <div class="card-para">
-                            Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Vel, laborum Lorem ipsum dolor sit.
+                        <div class="arrow">
+                            <img src="./l-arrow.png"/>
                         </div>
                     </div>
                 </div>
@@ -379,6 +394,34 @@
                         </tr>
                     </table>
                 </div>
+
+                <div style="display: none;" class="block-two">
+                    <table>
+                        <tr>
+                            <td style="font-size: 20px; font-weight: bold;">Quick Links</td>
+                        </tr>
+                        <tr>
+                            <td>Homes</td>
+                            <td>Travles</td>
+                            <td>Recommendations</td>
+                            <td>Mission Statement</td>
+                        </tr>
+                        <tr>
+                            <td>About Us</td>
+                            <td>Promo Flights</td>
+                            <td>Guides</td>
+                            <td>The Teams</td>
+                        </tr>
+                        <tr>
+                            <td>My Travel Logs</td>
+                            <td>Travel Routes</td>
+                            <td>Blogs</td>
+                            <td>Contact Us</td>
+                        </tr>
+                        <tr>
+                    </table>
+                </div>
+
                 <div class="block-three">
                     <p>2021 - 2022 My Log Travels. All Rights Reserved.</p>
                 </div>
@@ -402,7 +445,6 @@
         }
 
         function openMenu(e) {
-            console.log("open...!");
             e.stopPropagation();
             const menu = document.querySelector(".mobile-menu-modal");
             const menuBar = document.querySelector(".mobile-menu");
@@ -411,7 +453,6 @@
         }
 
         function closeMenu(e) {
-            console.log("close...!");
             e.stopPropagation();
             const menu = document.querySelector(".mobile-menu-modal");
             const menuBar = document.querySelector(".mobile-menu");
