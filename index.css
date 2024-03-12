@@ -55,6 +55,7 @@ body {
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .burger-menu  {
@@ -79,6 +80,8 @@ body {
     padding-right: 57px;
 }
 
+
+
 .links .link:nth-child(1) {
     font-weight: bolder;
 }
@@ -95,6 +98,12 @@ body {
     padding: 7px 31px;
     border: 2px solid black;
     border-radius: 4px
+}
+
+.contact-link:hover {
+    background-color: #c4c4c4;
+    color: #232323;
+    cursor: pointer;
 }
 
 .text-and-img-container {
@@ -255,6 +264,12 @@ body {
     color: white;
     border: 2px solid white;
     border-radius: 7px;
+}
+
+.second-cont-two-button button:hover {
+    background-color: #c4c4c4;
+    color: #232323;
+    cursor: pointer;
 }
 
 .third-container {
@@ -448,13 +463,15 @@ body {
 
 
 .fifth-container .container .container-two .block-three img {
-    width: 22%;
+    width: 23%;
     height: 47%;
     mix-blend-mode: color-burn;
+    padding-right: 25px;
 }
 
 .fifth-container .container .container-two .block-two .block-two .para-two {
     color: #232323;
+    word-break: break-all;
 }
 
 .fifth-container .container .container-two .block-two .block-two .para-two p {
@@ -524,6 +541,11 @@ body {
 .sixth-container-one .para-one {
     position: absolute;
     top: 374px;
+}
+
+.sixth-container-one .para-one .para-content, .sixth-container-one .para-two .para-content{
+    padding: 8px 0;
+    word-break: break-all;
 }
 
 .sixth-container-one .para-one .para-heading, .para-two .para-heading{
@@ -623,6 +645,11 @@ body {
     width: 100%;
     height: 100%;
     background-color: #e9e7e7;
+    background-image: url(scribble_dark_2.png), url(scribble_dark_3.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 17px left 0px, top 542px right 18px;
+    background-size: 262px 117px 30px;
+    padding: 8% 0;
 }
 
 .eighth-container .container {
@@ -639,8 +666,8 @@ body {
 
 .eighth-container .cards .left-arrow{
     position: absolute;
-    left: 21px;
-    top: 45%;
+    left: 10px;
+    top: 36%;
     width: 5%;
 }
 
@@ -651,16 +678,16 @@ body {
     border: 3px solid black;
     border-radius: 8px;
     background-color: #e9e7e7;
+    padding: 6px;
 }
 
 .eighth-container .cards .right-arrow{
     position: absolute;
-    right: 21px;
-    top: 44%;
+    right: 13px;
+    top: 38%;
     width: 5%;
     transform: rotate(180deg);
     background-color: #e9e7e7;
-
 }
 
 .eighth-container .cards .card {
@@ -669,8 +696,10 @@ body {
     border: 3px solid black;
     height: 100%;
     border-radius: 10px;
-    padding-top: 75px;
+    padding-top: 22px;
     margin: 0 6px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .eighth-container .cards .card .card-heading {
@@ -693,7 +722,7 @@ body {
 
 .eighth-container .cards {
     position: absolute;
-    height: 70%;
+    height: 76%;
     padding-top: 25px;
     text-align: center;
 }
@@ -710,6 +739,10 @@ body {
 .eighth-container .cards .card img {
     width: 100px;
 
+}
+
+.eighth-container .cards .arrows {
+    display: none;
 }
 
 
@@ -811,6 +844,11 @@ body {
     width: 100%;
     height: 60%;
     background-color: #c4c4c4;
+
+    background-image: url(scribble_dark.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 234px left 0;
+    background-size: 307px 117px;
 }
 
 .tenth-container .container {
@@ -839,18 +877,22 @@ body {
     left: 0;
 }
 
-.tenth-container .container .inner-container .block-two {
+.tenth-container .container .inner-container .block-two,
+.tenth-container .container .inner-container .mobile-block-two
+{
     display: inline-block;
     position: absolute;
     top: 0;
     right: 7%;
 }
 
-.tenth-container .container .inner-container .block-two table {
+.tenth-container .container .inner-container .block-two table,
+.tenth-container .container .inner-container .mobile-block-two table{
     border-collapse: collapse;
 }
 
-.tenth-container .container .inner-container .block-two table td {
+.tenth-container .container .inner-container .block-two table td,
+ .tenth-container .container .inner-container .mobile-block-two table td{
     padding: 7px 32px;
     color: #232323;
     font-weight: 400;
@@ -868,6 +910,10 @@ body {
 }
 
 .tenth-container .container .mobile-screen-footer {
+    display: none;
+}
+
+.tenth-container .container .inner-container .mobile-block-two {
     display: none;
 }
 
@@ -916,6 +962,7 @@ body {
 
     #sec-one {
         height: auto;
+        background-image: none;
     }
 
     .navbar {
@@ -1215,6 +1262,7 @@ body {
 
     .eighth-container{
         height: auto;
+        background-image: none;
     }
 
     .eighth-container .container .inner-container .heading {
@@ -1324,13 +1372,15 @@ body {
 
     .tenth-container {
         padding: 5% 0;
+        background-image: none;
     }
 
     .tenth-container .container {
         padding: 0;
     }
 
-    .tenth-container .container .inner-container .block-two table td {
+    .tenth-container .container .inner-container .block-two table td,
+    .tenth-container .container .inner-container .mobile-block-two table td {
         padding: 5px 20px
     }
 
@@ -1341,7 +1391,8 @@ body {
         text-align: center;
     }
 
-    .tenth-container .container .inner-container .block-two {
+    .tenth-container .container .inner-container .block-two,
+    .tenth-container .container .inner-container .mobile-block-two {
         /* display: none; */
         position: static;
         padding: 14% 0;
@@ -1354,6 +1405,15 @@ body {
     .tenth-container .container .inner-container .block-three, .block-four{
         position: static;   
     }
+
+    .tenth-container .container .inner-container .mobile-block-two {
+        display: block;
+    }
+
+    .tenth-container .container .inner-container .block-two {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 1029px) {
@@ -1371,36 +1431,6 @@ body {
     .main-button {
         width: 33%;
         font-size: 12px;
-        font-weight: 400;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .contact-link {
-        font-size: 16px;
-    }
-
-    .links .link {
-        font-size: 13px;
-        padding-right: 44px;
-    }
-}
-
-@media screen and (max-width: 782px) {
-    .main-heading {
-        font-size: 19px;
-        letter-spacing: -2px;
-        line-height: 29px;
-        font-weight: 400;
-    }
-
-    .main-para {
-        font-size: 13px;
-    }
-
-    .main-button {
-        width: 26%;
-        font-size: 10px;
         font-weight: 400;
     }
 }
