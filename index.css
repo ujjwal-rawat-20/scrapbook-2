@@ -746,6 +746,7 @@ body {
     background-color: #ffffff;
     border: 3px solid #232323;
     margin: 5px 0;
+    padding: 0 10px;
 }
 
 .ninth-container .container .inner-container .block-one-fifth textarea {
@@ -755,6 +756,7 @@ body {
     background-color: #ffffff;
     border: 3px solid #232323;
     margin: 10px 0;
+    padding: 5px 10px;
 } 
 
 .ninth-container .container .inner-container .block-one .block-one-sixth {
