@@ -11,14 +11,14 @@
 </head>
 <body>
     <div class="outter-container">
-        <div class="mobile-menu-modal"><div class="mobile-menu">
+        <div onclick="closeMenu(event)" class="mobile-menu-modal"></div>
+        <div class="mobile-menu">
             <p>Home</p>
             <p>Guides</p>
             <p>Flights</p>
             <p>About</p>
             <p>Contact Us</p>
-            <p onclick="closeMenu()">close</p>
-        </div></div>
+        </div>
         <section id="sec-one">
             <div class="container">
                 <div class="navbar">
@@ -31,20 +31,21 @@
                     <div class="contact-link">
                         Contact Us
                     </div>
-                    <div onclick="openMenu()" class="burger-menu">
+                    <div onclick="openMenu(event)" class="burger-menu">
                         <img src="./burger-menu.png" />
                     </div>
                 </div>
 
                 <div class="text-and-img-container">
-                    <div class="main-img-1">
-                        <img src="./place_your_image_here_dou_9.jpg" />
-                    </div>
-
                     <div class="main-text">
                         <div class="main-heading">
                             <h1>Travel to your dream destination</h1>
                         </div>
+
+                        <div class="main-img-1">
+                            <img src="./place_your_image_here_dou_9.jpg" />
+                        </div>
+
                         <div class="main-para">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Dicta enim magni sit optio dolores consectetur elit elit adipisicing elit.
@@ -387,14 +388,31 @@
 
 
     <script>
-        function openMenu() {
+       window.addEventListener("resize", (event) => {
+
+        if (checkWindowWidth(768)) {
+            const menu = document.querySelector(".mobile-menu-modal");
+            menu.style.display = "none";
+        }
+        });
+
+
+        function checkWindowWidth(width) {
+            return window.innerWidth >= width;
+        }
+
+        function openMenu(e) {
+            console.log("open...!");
+            e.stopPropagation();
             const menu = document.querySelector(".mobile-menu-modal");
             const menuBar = document.querySelector(".mobile-menu");
             menu.style.display = "block";
             menuBar.style.display = "block";
         }
 
-        function closeMenu() {
+        function closeMenu(e) {
+            console.log("close...!");
+            e.stopPropagation();
             const menu = document.querySelector(".mobile-menu-modal");
             const menuBar = document.querySelector(".mobile-menu");
             menu.style.display = "none";

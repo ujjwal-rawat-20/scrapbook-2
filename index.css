@@ -904,6 +904,8 @@ body {
         display: block;
         width: 100%;
         padding: 0;
+        padding: 10px 0;
+    
     }
 
     .main-img-1 img {
@@ -917,7 +919,6 @@ body {
 
     .main-text, .main-img {
         width: 100%;
-        padding: 11% 0px;
     }
 
     .fouth-container .container {
@@ -1245,6 +1246,10 @@ body {
 }
 
 @media screen and (max-width: 1029px) {
+    .mobile-menu-modal {
+        display: none;
+    }
+
     .main-heading {
         font-size: 32px;
         letter-spacing: -2px;
