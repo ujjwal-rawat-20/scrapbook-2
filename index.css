@@ -926,14 +926,14 @@ body {
 
     .mobile-menu{
         position: absolute;
-        left: 0;
+        left: -50%;
         background: #1f1e1e;
         color: white;
         width: 50%;
         height: 100vh;
         z-index: 1;
-        display: none;
-        transition: transform 1s ease-out;
+        transition: all 0.5s ease-in;
+        display: block;
     }
 
     .mobile-menu-modal {

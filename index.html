@@ -440,6 +440,15 @@
         });
 
 
+        window.onscroll = function (e) {  
+            const menu = document.querySelector(".mobile-menu-modal");
+            const menuBar = document.querySelector(".mobile-menu");
+
+            menu.style.display = "none";
+            menuBar.style.left = "-50%";
+        } 
+
+
         function checkWindowWidth(width) {
             return window.innerWidth >= width;
         }
@@ -448,8 +457,9 @@
             e.stopPropagation();
             const menu = document.querySelector(".mobile-menu-modal");
             const menuBar = document.querySelector(".mobile-menu");
+
             menu.style.display = "block";
-            menuBar.style.display = "block";
+            menuBar.style.left = "0%";
         }
 
         function closeMenu(e) {
@@ -457,7 +467,7 @@
             const menu = document.querySelector(".mobile-menu-modal");
             const menuBar = document.querySelector(".mobile-menu");
             menu.style.display = "none";
-            menuBar.style.display = "none";
+            menuBar.style.left = "-50%";
         }
 
     </script>
