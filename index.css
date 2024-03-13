@@ -246,6 +246,7 @@ body {
     font-family: "Lato";
     text-align: center;
     padding: 17px 0;
+    word-break: break-all;
 }
 
 .second-cont-two-button{
@@ -322,6 +323,7 @@ body {
     font-weight: 400;
     font-family: "Lato";
     text-align: left;
+    word-break: break-all;
 }
 
 .card .line {
@@ -1306,6 +1308,10 @@ body {
         width: 100%;
     }
 
+    .eighth-container .inner-container .cards #card-2, #card-3 {
+        display: none;
+    }
+
     
     .eighth-container .cards .arrows .arrow img {
         width: 40%;
@@ -1371,6 +1377,7 @@ body {
     }
 
     .tenth-container {
+        height: auto;
         padding: 5% 0;
         background-image: none;
     }
@@ -1386,7 +1393,7 @@ body {
 
     .tenth-container .container .inner-container .block-one {
         width: 100%;
-        font-size: 23px;
+        font-size: 28px;
         position: static;
         text-align: center;
     }
@@ -1408,6 +1415,7 @@ body {
 
     .tenth-container .container .inner-container .mobile-block-two {
         display: block;
+        padding: 9% 10%
     }
 
     .tenth-container .container .inner-container .block-two {
